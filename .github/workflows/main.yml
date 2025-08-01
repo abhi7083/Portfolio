@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Chcekout Code
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -24,7 +24,6 @@ jobs:
       - name: Run Tests
         run: npm test
 
-      - name: Build Project
-        run: npm install
+      - name: Build Projects
         run: npm run build
             
