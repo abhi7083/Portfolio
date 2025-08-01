@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "echo 'No build step needed for static site'"
   },
   "keywords": [],
   "author": "",
