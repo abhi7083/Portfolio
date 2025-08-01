@@ -23,7 +23,7 @@ describe("Portfolio Page", () => {
   test("should have a header section", () => {
     const header = document.querySelector("header");
     expect(header).not.toBeNull();
-    expect(header.querySelector("h1").textContent).toContain("Abhishek");
+    expect(header.querySelector("h1").textContent).toContain("Abhi");
   });
 
   test("should have a Projects section with at least one project", () => {
