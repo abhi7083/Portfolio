@@ -1,15 +1,16 @@
-name: Build
+name: Test
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch: #manual
+    paths:
+      - ".github/workflows/main.yml"
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: # manual
 
 jobs:
-  test-and-build:
-    runs-on: ubuntu-latest
-
+  build:
+    runs-on: windows-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
